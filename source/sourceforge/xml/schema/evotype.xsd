@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.evologic.com.uk/evologic/evotype" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.evologic.com.uk/evologic/evotype" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="evotype">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="akey">
+					<xs:complexType>
+						<xs:attribute name="value" type="xs:integer" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="nodetype">
+					<xs:complexType>
+						<xs:attribute name="value" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="nodename">
+					<xs:complexType>
+						<xs:attribute name="value" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="appl-key">
+					<xs:complexType>
+						<xs:attribute name="value" type="xs:string" use="optional"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="owner">
+					<xs:complexType>
+						<xs:attribute name="value" type="xs:string" use="optional"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="division-id">
+					<xs:complexType>
+						<xs:attribute name="value" type="xs:integer" use="optional"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="atinherit">
+					<xs:complexType>
+						<xs:attribute name="value" type="xs:string" use="optional"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="attributes" type="attributesType"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="attributesType">
+		<xs:sequence>
+			<xs:element name="integers">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="AT000AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT001AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT002AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT003AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT004AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT005AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT006AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT007AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT008AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT009AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="numbers">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="AT010AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT011AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT012AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT013AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT014AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT015AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT016AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT017AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT018AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT019AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="strings">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="AT020AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT021AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT022AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT023AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT024AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT025AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT026AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT027AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT028AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT029AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT030AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT031AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT032AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT033AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT034AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT035AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT036AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT037AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT038AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT039AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="dates">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="AT040AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT041AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT042AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT043AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT044AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT045AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT046AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT047AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT048AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AT049AT" minOccurs="0">
+							<xs:complexType>
+								<xs:attribute name="value" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.evologic.com.uk/evologic/evoobject" xmlns="http://www.evologic.com.uk/evologic/evoobject" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="evoobject">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ckey">
+					<xs:complexType>
+						<xs:attribute name="value" type="xs:integer" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="pkey">
+					<xs:complexType>
+						<xs:attribute name="value" type="xs:integer" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="validfrom">
+					<xs:complexType>
+						<xs:attribute name="value" type="xs:date" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="validto">
+					<xs:complexType>
+						<xs:attribute name="value" type="xs:date" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="lastchange">
+					<xs:complexType>
+						<xs:attribute name="value" type="xs:date" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="type">
+					<xs:complexType>
+						<xs:attribute name="value" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="vorder" minOccurs="0">
+					<xs:complexType>
+						<xs:attribute name="value" type="xs:integer" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
